@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">-->
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="layout" template="/WEB-INF/view/layout/mainLayout.jsp">
+        <put-attribute name="title" value="7J" />
+    </definition>
+    
+    <definition name="projectList" extends="layoutWithBreadcrumb">
+        <put-attribute name="title" value="Project Management" />
+        <put-attribute name="pageContent" value="/WEB-INF/view/project/projectList.jsp" />
+    </definition>
+    
+    <definition name="newProject" template="/WEB-INF/view/project/createNewProject.jsp">
+    </definition>
+    <definition name="editProject" template="/WEB-INF/view/project/editProject.jsp">
+    </definition>
+    
+    <definition name="login" template="/WEB-INF/view/login.jsp"/>
+    <definition name="layoutWithBreadcrumb" extends="layout">
+    	<put-attribute name="menuNavigator" value="/WEB-INF/view/navigator/breadcrumb.jsp"/>
+    </definition>
+    <definition name="viewProject" extends="layoutWithBreadcrumb">
+    	<put-attribute name="title" value="Price Plan Management" />
+        <put-attribute name="pageContent" value="/WEB-INF/view/project/viewProject.jsp" />
+    </definition>
+    
+    <definition name="newPricePlan" template="/WEB-INF/view/pricePlan/createNewPricePlan.jsp">
+    </definition>
+    <definition name="editPricePlan" template="/WEB-INF/view/pricePlan/editPricePlan.jsp">
+    </definition>
+    
+    <definition name="createNewPricePlan" extends="layoutWithBreadcrumb">
+    	<put-attribute name="title" value="Create New Price Plan" />
+        <put-attribute name="pageContent" value="/WEB-INF/view/pricePlan/createNewPricePlan.jsp" />
+    </definition>
+    
+     <definition name="editPricePlan" extends="layoutWithBreadcrumb">
+    	<put-attribute name="title" value="Edit Price Plan" />
+        <put-attribute name="pageContent" value="/WEB-INF/view/pricePlan/editPricePlan.jsp" />
+    </definition>
+    
+    <definition name="viewPricePlan" extends="layoutWithBreadcrumb">
+    	<put-attribute name="title" value="View Price Plan" />
+        <put-attribute name="pageContent" value="/WEB-INF/view/pricePlan/viewPricePlan.jsp" />
+    </definition>
+    
+    <definition name="viewPricePlanNew" template="/WEB-INF/view/pricePlan/viewPricePlanNew.jsp"/>
+    <definition name="toolPlanListLayout" template="/WEB-INF/view/toolPlan/toolPlanList.jsp"/>
+    
+    <definition name="toolPlanList" extends="toolPlanListLayout">
+       <put-attribute name="searchContent" value=""/>
+    </definition>
+    
+    <definition name="searchToolPlan" extends="toolPlanListLayout">
+         <put-attribute name="searchContent" value="/WEB-INF/view/toolPlan/searchToolPlans.jsp"/>
+    </definition>
+    
+    <definition name="searchToolPricePlan" extends="layoutWithBreadcrumb">
+         <put-attribute name="pageContent" value="/WEB-INF/view/toolPlan/searchToolPlans.jsp"/>
+    </definition>
+    
+    <definition name="createToolPlan" extends ="layoutWithBreadcrumb">
+        <put-attribute name="title" value="Price Plan Records Management" />
+        <put-attribute name="pageContent" value="/WEB-INF/view/toolPlan/createToolPlan.jsp" />
+    </definition>
+    
+    <definition name="extractPricePlan" extends ="layoutWithBreadcrumb">
+        <put-attribute name="title" value="Price Plan Records Management" />
+        <put-attribute name="pageContent" value="/WEB-INF/view/toolPlan/extractPricePlan.jsp" />
+    </definition>
+    
+    <definition name="copyToolPlans" extends ="layoutWithBreadcrumb">
+    	<put-attribute name="title" value="Copy Price Plan Records" />
+        <put-attribute name="pageContent" value="/WEB-INF/view/toolPlan/copyToolPlans.jsp" />
+     </definition>
+     
+      <definition name="commentToolPlans" extends ="layoutWithBreadcrumb">
+    	<put-attribute name="title" value="Price Plan Records Management" />
+        <put-attribute name="pageContent" value="/WEB-INF/view/toolPlan/commentToolPlans.jsp" />
+     </definition>
+     
+     <definition name="updateToolPlans" extends ="layoutWithBreadcrumb">
+    	<put-attribute name="title" value="Price Plan Records Management" />
+        <put-attribute name="pageContent" value="/WEB-INF/view/toolPlan/updateToolPlans.jsp" />
+     </definition>
+     
+     <definition name="additionalPricePlanList" extends ="layoutWithBreadcrumb">
+    	<put-attribute name="title" value="Additional Price Plan Management" />
+        <put-attribute name="pageContent" value="/WEB-INF/view/additionalPricePlan/additionalPricePlanList.jsp" />
+     </definition>
+     
+      <definition name="createAdditionalPricePlan" extends ="layoutWithBreadcrumb">
+    	<put-attribute name="title" value="Additional Price Plan Management" />
+        <put-attribute name="pageContent" value="/WEB-INF/view/additionalPricePlan/createAdditionalPricePlan.jsp" />
+     </definition>
+
+     <definition name="pricePlanTabContent" template="/WEB-INF/view/pricePlan/pricePlanTabContent.jsp"/>
+     
+      <definition name="importPricePlan" extends ="layoutWithBreadcrumb">
+    	<put-attribute name="title" value="Price Plan Records Management" />
+        <put-attribute name="pageContent" value="/WEB-INF/view/pricePlan/importPricePlan.jsp" />
+     </definition>
+     <definition name="viewAdditionalPricePlan" extends ="layoutWithBreadcrumb">
+    	<put-attribute name="title" value="Additional Price Plan Management" />
+        <put-attribute name="pageContent" value="/WEB-INF/view/additionalPricePlan/viewAdditionalPricePlan.jsp" />
+     </definition>
+      <definition name="editAdditionalPricePlan" extends ="layoutWithBreadcrumb">
+    	<put-attribute name="title" value="Additional Price Plan Management" />
+        <put-attribute name="pageContent" value="/WEB-INF/view/additionalPricePlan/editAdditionalPricePlan.jsp" />
+     </definition>
+      <definition name="generateAdditionalPricePlanList" extends ="layoutWithBreadcrumb">
+    	<put-attribute name="title" value="Additional Price Plan Management" />
+        <put-attribute name="pageContent" value="/WEB-INF/view/additionalPricePlan/generateAdditionalPricePlanList.jsp" />
+     </definition>
+     <definition name="searchADPricePlan" extends ="layoutWithBreadcrumb">
+    	<put-attribute name="title" value="Additional Price Plan Management" />
+        <put-attribute name="pageContent" value="/WEB-INF/view/additionalPricePlan/searchADPricePlan.jsp" />
+     </definition>
+      <definition name="searchADPricePlanResult" extends ="layoutWithBreadcrumb">
+    	<put-attribute name="title" value="Additional Price Plan Management" />
+        <put-attribute name="pageContent" value="/WEB-INF/view/additionalPricePlan/searchADPricePlanResult.jsp" />
+     </definition>
+     
+     <definition name="editToolPlan" extends ="layoutWithBreadcrumb">
+    	<put-attribute name="title" value="Edit Tool Plan" />
+        <put-attribute name="pageContent" value="/WEB-INF/view/toolPlan/editToolPlan.jsp" />
+     </definition>
+      <definition name="userManagement" extends ="layoutWithBreadcrumb">
+    	<put-attribute name="title" value="User Management" />
+        <put-attribute name="pageContent" value="/WEB-INF/view/user/userManagement.jsp" />
+     </definition>
+     
+     <definition name="viewToolPlan" extends ="layoutWithBreadcrumb">
+    	<put-attribute name="title" value="View Tool Plan" />
+        <put-attribute name="pageContent" value="/WEB-INF/view/toolPlan/viewToolPlan.jsp" />
+     </definition>
+     
+     <definition name="viewToolPlanHistory" extends ="layoutWithBreadcrumb">
+    	<put-attribute name="title" value="View Tool Plan" />
+        <put-attribute name="pageContent" value="/WEB-INF/view/toolPlan/viewToolPlanHistory.jsp" />
+     </definition>
+     
+     <definition name="compareToolPlanHistory" extends ="layoutWithBreadcrumb">
+    	<put-attribute name="title" value="View Tool Plan" />
+        <put-attribute name="pageContent" value="/WEB-INF/view/toolPlan/compareToolPlanHistory.jsp" />
+     </definition>
+     
+     <definition name="settingList" extends="layoutWithBreadcrumb">
+        <put-attribute name="title" value="Setting Management" />
+        <put-attribute name="pageContent" value="/WEB-INF/view/setting/viewDestination.jsp" />
+    </definition>
+    
+    
+   <definition name="createNewDestination" template="/WEB-INF/view/setting/createNewDestination.jsp">
+    </definition>
+          
+    <definition name="viewDescriptionAdditionalPricePlan" template="/WEB-INF/view/additionalPricePlan/viewDescriptionAdditionalPricePlan.jsp"></definition>
+</tiles-definitions>

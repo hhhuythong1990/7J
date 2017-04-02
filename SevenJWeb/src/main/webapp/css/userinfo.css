@@ -1,0 +1,32 @@
+
+#UserInfo .bell-window-content {
+    padding-top: 6px;
+    padding-bottom: 8px;
+    width: auto;
+    overflow: hidden;
+}
+
+#UserInfo p {
+    padding: 6px;
+    text-align:  center;
+    margin: 0px;
+}
+
+#UserInfo ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+#UserInfo li {
+    padding: 2px 0px;
+    margin-left: 18px;
+    list-style-image: url("../images/bullet.gif");
+    background-color:#FFFFFF;
+}
+
+#UserInfo li.userinforowover {
+    padding: 2px 0px;
+    margin-left: 18px;
+    list-style-image: url("../images/bullet.gif");
+    background-color:#E7EFFC;
+}

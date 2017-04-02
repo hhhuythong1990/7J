@@ -1,0 +1,314 @@
+/*
+    This file contains specific style for portal structural elements
+    and some key portlets.
+*/
+
+/*
+    Header, nav, content, and footer.
+*/
+#bell-header-logo {
+    float:left;
+	width:417px;
+}
+
+body {
+    min-width: 694px; /* enough that liquid element doesn't go behind title */
+}
+
+#bell-header-logo a, 
+#bell-header-logo a:visited, 
+#bell-header-logo a:active,
+#bell-header-logo a:hover {
+    color: #fcfcfc; /* same as background */
+    text-decoration: none;
+    background-color: #fcfcfc;
+}
+
+#bell-logo {
+    width: 50px;
+    height: 34px;
+    padding: 8px 17px;
+}
+
+#bell-title {
+    padding: 0px 0px;
+}
+
+#bell-header-menu {
+	float:right;
+	margin-right:10px;
+	height:80px;
+}
+
+
+#bell-header-menu .welcome {
+	font-weight:bold;
+	color:#212121;
+	padding-right:15px;
+	float:left;
+	vertical-align:top;
+	padding-top:7px;
+}
+
+
+#bell-header-menu .left {
+	background-image:url(../images/menuleft.gif);
+	background-repeat:no-repeat;
+	width:6px;
+	height:38px;
+	float:left;
+}
+
+#bell-header-menu .home {
+	background-image:url(../images/menucenter.gif);
+	background-repeat:repeat-x;
+	height:38px;
+	float:left;
+	vertical-align:middle;
+	padding:5px 15px 0px 15px;
+}
+
+#bell-header-menu .line {
+	background-image:url(../images/menuline.gif);
+	background-repeat:no-repeat;
+	width:1px;
+	height:37px;
+	float:left;
+}
+
+#bell-header-menu .center {
+	background-image:url(../images/menucenter.gif);
+	background-repeat:repeat-x;
+	height:38px;
+	float:left;
+	vertical-align:middle;
+	padding:7px 15px 0px 15px;
+}
+.main_menulast{
+	background-image:url(../images/menucenter.gif);
+	background-repeat:repeat-x;
+	height:38px;
+	float:left;
+	vertical-align:middle;
+	padding:7px 1px 0px 1px;
+	cursor:pointer;
+	
+	}
+
+#bell-header-menu .right {
+	background-image:url(../images/menuright.gif);
+	background-repeat:no-repeat;
+	width:6px;
+	height:38px;
+	float:left;
+}
+
+#bell-footer {
+    background: url(../images/bkgnd_footer.gif) top left repeat-x;
+    width: 100%;
+    border-top: 1px solid #575757;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 0.85em;
+}
+
+#bell-footer .backtotop {
+    float: left;
+    background: transparent;
+    width: 30%;
+    text-align: left;
+}
+
+#bell-footer .backtotop a {
+    margin-left: 22px;
+    background: transparent;
+}
+#bell-footer .backtotop a:hover {
+    background: transparent;
+}
+
+#bell-footer .backtotop a .backtotoff, #bell-footer .backtotop a .backtoton {
+    background: transparent url(../images/backtotop.gif) no-repeat left top;
+    width: 21px;
+    height: 20px;
+}
+
+#bell-footer .backtotop a .backtoton {
+    background-position: 0px -48px;
+    background-color: transparent;
+}
+
+#bell-footer .info {
+    float: right;
+    width:60%;
+    background-color: transparent;
+}
+
+#bell-footer .info p {
+    text-align: right;
+    color: #666666;
+    background-color: transparent;
+    margin: 2px 0px;
+    margin-right: 6px;
+}
+
+#bell-nav-col {
+    float: left;
+	width: 230px;
+	margin: 0px;
+}
+
+#bell-content-col {
+    float: right;
+    width: 100%; 
+    margin-left: -230px;
+}
+
+#bell-content-col-inner {
+    margin-left: 0px;
+}
+
+/*
+    Console content area specific books and pages
+*/
+#bell-content-area {
+}
+
+#bell-content-area .bell-book {
+}
+
+#bell-content-area .bell-page {
+    border-top: 1px solid #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+    border-bottom: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+    background-color: #FFFFFF;
+    padding: 0px;
+}
+
+#bell-content-area .page-table {
+    background-color: #ffffff;
+    padding: 1px;
+}
+
+#bell-content-area .page-assistant {
+    background-color: #ffffff;
+    padding: 1px;
+}
+
+#bell-content-area .page-content {
+    background-color: #ffffff;
+    padding: 1px;
+}
+
+#bell-content-area .bell-window {
+    border: none;
+    margin: 8px;
+}
+
+#bell-content-area .bell-frame .bell-window-content {
+    background-color: #FFFFFF;
+    border: none;
+}
+
+/* 
+ * Ideally all the content would fit in the window without horizontal scrolling
+ * but allow it when needed.
+ */
+#bell-content-area .bell-window-content {
+    overflow: auto;
+    /* the following is to avoid the unnecessary vertical scroll bar in IE */
+    overflow-y: hidden;
+    overflow-x: auto;
+    /* IE puts the scroll bar inside so need to add extra padding */
+    padding-bottom: 12px;
+}
+
+/*
+    Toolbar Area Definitions
+*/
+
+#portlet_toolbar {
+    /* top, right margins are zero because portlet content adds it back */
+    margin: 0px 0px 2px 6px;
+}
+
+/*
+    Breadcrumb (AKA history) Definitions
+*/
+
+#portlet_history {
+    margin: 2px 6px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-width: 0px;
+}
+
+/*
+    Messages Area Definitions
+*/
+
+#portlet_messages {
+    margin: 2px 6px;
+    border-width: 0px;
+}
+
+
+/*
+    Styles used when the user preference to show portal definition labels
+    is enabled. The preference is intended for extension developers.
+*/
+.devLabelInfo {
+    font-size: 0.8em;
+    color: #888;
+}
+
+.devLabelInfo p {
+    margin: 1px;
+    padding: 1px;
+    border: 2px solid #555;
+    border-bottom-width: 0px;
+}
+
+/* CR370078 - better support for screen readers */
+.screenReadersOnly{
+    font-size: 0px;
+    overflow: hidden;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    background: none;
+    line-height:0;
+}
+
+
+
+.bell-line-top {
+	clear:both;
+	background-image:url(../images/lineTop.gif);
+	background-repeat:repeat-x;
+	background-position:top left;
+	height:13px;
+	width:100%;
+}
+#toolbar a img:hover {
+	
+	-webkit-border-radius:0px 0px 7px 0px;
+        -moz-border-radius: 0px 0px 7px 0px;
+        border-radius: 0px 0px 7px 0px;  
+    -webkit-box-shadow:  2px 2px 5px #0066CC;
+    -moz-box-shadow: 2px 2px 5px #0066CC;
+    box-shadow: 2px 2px 5px #0066CC;
+    behavior: url('css/PIE.htc');
+        position:relative;
+}
+#toolbar a img {
+	
+	-webkit-border-radius:0px 0px 0px 0px;
+        -moz-border-radius: 0px 0px 0px 0px;
+        border-radius: 0px 0px 0px 0px;    
+    
+    behavior: url('css/PIE.htc');
+        position:relative;
+}

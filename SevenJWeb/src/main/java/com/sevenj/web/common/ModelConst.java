@@ -1,0 +1,41 @@
+package com.sevenj.web.common;
+
+public class ModelConst {
+   public final static String SATELLITE_CODES = "satelliteCodes";
+   public final static String DESTINATION_CODES = "destinationCodes";
+   public final static String TYPE_OF_CALLS = "typeOfCalls";
+   public final static String SPECIAL_TYPE_OF_CALLS = "specialTypeOfCalls";
+   public final static String CUSTOMER_SPECIFIC_RATING_CODES = "customerSpecificRatingCodes";
+   public final static String CAP_THRESHOLD_CODE = "capThresholdCode";
+   public final static String RATE_TYPE = "rateType";
+   public final static String RATE_TIME_UNIT = "rateTimeUnit";
+   public final static String WEEK_DEFINITION_CODES = "weekDefinitionCodes";
+   public final static String DESTINATIONS = "destinations";
+   public final static String PRICE_PLAN_LIST = "pricePlans";
+   public final static String SELECTED_TOOL_PLANS = "selectedToolPlans";
+   public final static String PRIORITY_CODES = "priorityCodes";
+   public final static String ACCOUNT_BASE_LISTS="accountBasedLists";
+   public final static String IS_TOOL_PRICINGPLANS="isToolPricingPlans";
+   public final static String NO_OVERSEA_DEST="noOverseaDests";
+   public final static String GENERALS="generals"; 
+   public final static String T29_OVERSEA_DESTS="t29OverseaDests";
+   public final static String BLOCK_OF_TIMES="blockOfTimes";
+   public final static String DOLL_AR_CAP="dollarCaps";
+   public final static String BILL_MINIUMS="billMiniums";
+   public final static String QUANTITYS="quantitys";
+   public final static String AIR_TIMES="airTimes";
+   public final static String INCREMENTS_60="increments60s";
+   public final static String INCREMENTS_60_OR_30="increments60or30s";
+   public final static String INCREMENTS_30="increments30s";
+   public final static String INCREMENTS_10="increments10s";
+   public final static String INCREMENTS_1="increments1s";
+   public final static String TOOL_PLAN_STATUSES = "toolPlanStatuses";
+   public final static String TOOL_PLAN = "toolPlan";
+   public final static String ORIGINATING_DESTINATION = "originatingDestination";
+   public final static String TERMINATING_DESTINATION = "terminatingDestination";
+   public final static String PLANTYPES = "planTypes";
+   public final static String KEY_EXPORT_EXCEL = "keyExportExcel";
+   public final static String PRICE_PLAN_CODE = "pricePlanCode";
+   public final static String PRICE_PLAN_NAME = "PricePlanName";  
+   public final static String PRICE_PLAN = "pricePlan";
+}

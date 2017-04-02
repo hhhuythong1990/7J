@@ -1,0 +1,147 @@
+/*
+    This file contains general styling for the "bellportal" skin.
+*/
+
+/*
+    General colors and setup for fonts
+*/
+
+body {
+	padding-bottom:0px;
+	padding-left:0px;
+	padding-right:0px;
+	padding-top:0px;
+	margin:0px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:70%;
+	line-height:20px;
+	font-weight: normal;	
+	background-color:#FFF;
+}
+
+html {
+    /* this off white matches the background color of the liquid elements */
+    background-color: #fcfcfc;
+}
+
+.jtable-main-container{
+	font-size:1.0em !important;
+	font-family:Verdana, Arial, Helvetica, sans-serif !important;
+}
+/*
+    Typography
+*/
+
+a, a:link , a:visited, a:active {
+    color: #00446e;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    color: #014c7b;
+	text-decoration: underline;
+    background-color: #E7EFFC;
+    font-weight: bold;
+}
+h1 {
+	font-size: 1.4em;
+	font-weight: normal;
+	margin-top: 0em;
+	margin-bottom: 0em;/*both set to zero and padding in header div is used intead to deal with compound ie pc problems that are beyound summary in a simple comment.*/
+	}
+h2 {
+	font-size: 1.12em;
+	margin: 1.2em 0em 1.2em 0em;
+	font-weight: normal;
+	}
+h3 {
+	font-size: 1.0em;
+	margin: 1.2em 0em 1.2em 0em;
+	font-weight: normal;
+	}
+h4 {
+	font-size: 1.2em;
+	margin: 1.2em 0em 1.2em 0em;
+	font-weight: bold;
+	}
+h5 {
+	font-size: 0.85em;
+	margin: 1.2em 0em 1.2em 0em;
+	font-weight: normal;
+	}
+h6 {
+	font-size: 0.8em;
+	margin: 1.2em 0em 1.2em 0em;
+	font-weight: normal;
+	}
+img {
+	border: 0;
+}
+ol, ul, li {
+	font-size: 1.0em;
+	line-height: 1.3em;
+	margin-top: 0.2em;
+	margin-bottom: 0.1em; 
+}
+p {
+	font-size: 1.0em;
+	line-height: 1.3em;
+	margin: 1.2em 0em 1.2em 0em;
+}
+li > p {
+	margin-top: 0.2em;
+}
+pre {
+	font-family: monospace;
+	font-size: 1.2em;
+}
+code {
+    font-family: monospace;
+    font-size: 1.2em;
+}
+strong, b {
+	font-weight: bold;
+}
+
+/*
+    Scrollbar colors for browsers that support it
+*/
+body {
+    scrollbar-face-color: #CFDBEF;
+    scrollbar-highlight-color: #F1F9FE;
+    scrollbar-3dlight-color: #ABBBC7;
+    scrollbar-darkshadow-color: #7F9CB2;
+    scrollbar-shadow-color: #CAE4F8;
+    scrollbar-arrow-color: #7F9CB2;
+    scrollbar-track-color: #F2F2F2;
+}
+
+/*
+    Header, footer and general layout
+*/
+
+.bell-header {
+    border-bottom: 1px solid #DDDDDD;
+    color: #000;
+    height:80px;
+}
+
+.bell-footer {
+    clear: both;
+}
+
+.bell-layout td {
+    vertical-align: top;
+}
+
+/*
+    image rollover styles
+*/
+
+.bell-image-rollover {
+    display: none;
+}
+
+.bell-image-nonrollover {
+    display: inline;
+}

@@ -1,0 +1,32 @@
+
+#SystemTask .bell-window-content {
+    padding-top: 6px;
+    padding-bottom: 8px;
+    width: auto;
+    overflow: hidden;
+}
+
+#SystemTask p {
+    padding: 6px;
+    text-align:  center;
+    margin: 0px;
+}
+
+#SystemTask ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+#SystemTask li {
+    padding: 2px 0px;
+    margin-left: 18px;
+    list-style-image: url("../images/bullet.gif");
+    background-color:#FFFFFF;
+}
+
+#SystemTask li.systemtaskrowover {
+    padding: 2px 0px;
+    margin-left: 18px;
+    list-style-image: url("../images/bullet.gif");
+    background-color:#E7EFFC;
+}

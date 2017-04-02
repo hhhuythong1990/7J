@@ -1,0 +1,203 @@
+/*
+    This file contains window-related styles for the "bellportal" skin.  
+    This includes titlebars, titlebar button rollovers and window content.
+
+    Note that this styling includes window content overflow handling.  
+    See below for specific notes.
+*/
+
+/* 
+    styles for titlebars
+*/
+
+.bell-titlebar {
+    font-size: 1.12em;
+    line-height: 2.0em;
+    font-weight: bold;
+    color: #06c;
+}
+
+
+.bell-titlebar img {
+    border: 0;
+    vertical-align: top;
+    margin-top: .3em; /* this is for IE6 only */
+}
+
+.bell-titlebar-left {
+	background-image:url(../images/titlebar_left.gif);
+	background-repeat:no-repeat;
+	width:22px;
+	height:29px;
+	float:left;
+}
+
+.bell-titlebar-right {
+	background-image:url(../images/titlebar_right.gif);
+	background-repeat:no-repeat;
+	width:14px;
+	height:29px;
+	float:right;
+}
+
+.bell-titlebar-center {
+	background-image:url(../images/titlebar_center.gif);
+	background-repeat:repeat-x;
+	background-position:top left;
+	margin:0px 14px 0px 22px;
+	height:29px;
+	font-size:13px;
+	font-weight:bold;
+	color:#212121;
+	vertical-align:middle;
+	
+}
+
+.bell-titlebar-window-icon,
+.bell-titlebar-title-panel {
+    float: left;
+}
+
+.bell-titlebar-title-panel h1,
+.bell-titlebar-title-panel h2 {
+    /* respecify the font size and weight because inherit didn't work for IE */
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.bell-titlebar-button-panel {
+    float: right;
+}
+
+.bell-titlebar-button-panel a,
+.bell-titlebar-button-panel a:hover {
+    margin-right: 4px;
+    background-color: transparent;
+}
+
+/* styles for image rollovers (titlebar buttons) */
+
+.bell-titlebar-button-panel a:hover > img.bell-image-rollover {
+    display: inline;
+}
+
+.bell-titlebar-button-panel a:hover > img.bell-image-nonrollover {
+    display: none;
+}
+
+/*
+    styles for windows
+*/
+
+.bell-layout-cell .bell-book {
+    border-style: solid;
+    border-width: 1px;
+    margin: 8px;
+}
+
+.bell-page {
+    padding: 1px;
+}
+
+.bell-window, .bell-frame {
+    border: none;
+	margin-left:6px;
+	margin-right:6px;
+	margin-top:6px;
+}
+
+.bell-frame .top {
+    background: #f1f1f1 url(../images/window_tb.gif) no-repeat left -42px;
+    margin: 0px;
+}
+
+.bell-frame .top div {
+    margin: 0px;
+    margin-left: 14px;
+    background: #f1f1f1 url(../images/window_tb.gif) no-repeat right -14px;
+}
+
+.bell-frame .top div div {
+    margin: 0px;
+    margin-right: 14px;
+    background: #f1f1f1 url(../images/window_tb.gif) repeat-x left 0px;
+    height: 14px;
+    font-size: 1px; /* for some reason IE 6 thinks it needs to make this higher
+    when you change the text size even though the height is fixed so make 
+    the font very small */
+}
+
+.bell-frame .middle {
+    background: #f1f1f1 url(../images/window_l.gif) repeat-y left top;
+}
+
+.bell-frame .middle div.r {
+    margin-left: 14px;
+    background: #f1f1f1 url(../images/window_r.gif) repeat-y right top;
+}
+
+.bell-frame .middle div.c {
+    margin-right: 14px;
+    padding: 0px;
+    border-top: 1px solid #DDDDDD;
+    border-left: 1px solid #DDDDDD;
+}
+
+.bell-frame .c2 {
+    background-color: #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+    border-bottom: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+}
+
+.bell-frame .bottom {
+    background: #f1f1f1 url(../images/window_tb.gif) no-repeat left -56px;
+    margin: 0px;
+}
+
+.bell-frame .bottom div {
+    margin: 0px;
+    margin-left: 14px;
+    background: #f1f1f1 url(../images/window_tb.gif) no-repeat right -28px;
+}
+
+.bell-frame .bottom div div {
+    margin: 0px;
+    margin-right: 14px;
+    background: #f1f1f1 url(../images/window_tb.gif) repeat-x left -70px;
+    height: 14px;
+    font-size: 1px; /* for some reason IE 6 thinks it needs to make this higher
+    when you change the text size even though the height is fixed so make 
+    the font very small */
+}
+
+/*
+    The following style applies to window content that overflows the specified portlet width. If you want to
+    change this behavior for ALL of your portlets, set the appropriate value for the overflow style here.
+    If you want to change this behavior for a SPECIFIC portlet, add the appropriate overflow style to that
+    portlet's Content Presentation Style attribute. See the Portlet Development Guide for more information 
+    and examples.
+*/
+.bell-window-content
+{
+    border-left:solid 1px #d6d6d6;
+	border-right:solid 1px #d6d6d6;
+	background-image:url(../images/window_content_bg.gif);
+	background-repeat:repeat-x;
+	background-position:bottom left;
+	width: 100%;
+	
+	margin-top: -2px;
+	
+
+}
+
+/* styles for async content portlets */
+
+.bell-window-content-only
+{
+    border: 0;
+    margin: 0;
+}

@@ -1,0 +1,58 @@
+/*
+    Horizontal placeholders in flow layouts, as well as the west, center and east placeholders in border
+    layouts use float mechanisms for placement.
+*/
+.bell-layout-flow-horizontal,
+.bell-layout-border-west,
+.bell-layout-border-center,
+.bell-layout-border-east
+{
+    float: left;
+}
+
+/*
+    Float clearing strategy based on http://www.quirksmode.org/css/clearing.html.
+*/
+.bell-layout-flow,
+.bell-layout-border-wce-container,
+.float-container
+{
+    overflow: hidden;
+    width: 100%;
+}
+
+div.clear {
+    clear: both;
+    line-height: 0px;
+}
+
+
+/*
+    Default widths of the west, center and east placeholders in border layouts.  These widths can be
+    overridden by specifying explicit widths on the individual placeholders in the layout markup.
+*/
+.bell-layout-border-west,
+.bell-layout-border-east
+{
+    width: 33%;
+}
+.bell-layout-border-center
+{
+    width: 34%;
+}
+
+/*
+    Grid layout uses fixed tables.  This style can be overridden in custom skeletons, skins or layouts.
+*/
+.bell-layout-grid
+{
+    table-layout: fixed;
+}
+
+/*
+    Preserves layout structure when placeholder is empty.
+*/
+.bell-layout-cell
+{
+    min-height: 1px;
+}

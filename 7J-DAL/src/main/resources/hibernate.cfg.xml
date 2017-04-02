@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+	 	
+	 	<!-- MySQL 
+	 	<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/7jpriceplan</property>
+		<property name="hibernate.connection.username">7jpriceplan</property>
+		<property name="hibernate.connection.password">@libaba001</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="show_sql">true</property>
+		<property name="format_sql">true</property>
+		 --> 
+		 
+		 
+		 
+		 <!-- Oracle--> 
+	 	<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+		<property name="hibernate.connection.url">jdbc:oracle:thin:@dhttech.ddns.net:1521:testdb1</property>
+		<property name="hibernate.connection.username">test</property>
+		<property name="hibernate.connection.password">test</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.OracleDialect</property>
+		<property name="show_sql">true</property>
+		<property name="format_sql">true</property>
+		 
+		 
+		<property name="c3p0.min_size">5</property>
+		<property name="c3p0.max_size">20</property>
+		<property name="c3p0.timeout">1800</property>
+		<property name="c3p0.max_statements">50</property>
+		<property name="connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property>
+
+		<mapping class="com.sevenj.model.Destination" />
+		<mapping class="com.sevenj.model.ToolPlan" />
+		<mapping class="com.sevenj.model.PricePlan" />
+		<mapping class="com.sevenj.model.Project" />
+		<mapping class="com.sevenj.model.User" />
+		<mapping class="com.sevenj.model.Role" />
+		<mapping class="com.sevenj.model.Comment" />
+		<mapping class="com.sevenj.model.AdditionalPricePlan" />
+		<mapping class="com.sevenj.model.Lookup" />
+		<mapping class="com.sevenj.model.History" />
+	</session-factory>
+</hibernate-configuration>

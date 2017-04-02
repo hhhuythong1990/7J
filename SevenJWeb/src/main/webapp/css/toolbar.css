@@ -1,0 +1,156 @@
+/*
+    This file contains general styling for the "bellportal" skin.
+*/
+
+/*
+    Toolbar button
+*/
+
+/* button dropdown co menu */      
+.aos1 {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: url("../images/sprite_black2.png");
+    background-origin: padding-box; 
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    width: 21px;
+	float:left;	
+	margin-left: 14px;
+    margin-top: -19px;
+    width: 21px;
+	
+	/* background-position: 0 -21px;*/
+}
+
+
+/*chon 1 hinh trong spite_blac2.png */   
+.aos {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: url("../images/sprite_black2.png");
+    background-origin: padding-box;   
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    width: 21px;
+	float:left;
+    height: 21px;
+   
+	
+	/* background-position: 0 -21px;*/
+}
+
+/* box for dropdownlist */
+.myClass{
+	height:28px;
+	width:54px;
+	float:left;
+	background-color: transparent;
+    background:url(../images/menuline.gif)  repeat-y scroll right 0 transparent;	
+	}
+	
+.myClass:hover{
+	background:#E2E2F1;	
+}
+	
+/*
+
+*/	
+.divCenter	
+{
+  margin-left: 15px;
+  margin-top: 3px;	
+  margin-bottom:3px;  
+}
+
+/*
+Qui dinh border cho 1 group
+*/
+.testool{			
+			border: 1px solid #999999;
+			height: 27px;			
+			background:#F2F2F2;
+			float:left;
+			margin-left:10px;	
+			/*cursor: pointer;*/
+		}
+		
+.testool>div{		
+			cursor: pointer;
+		}		
+
+/* ---------------- Group Toolbar ----------------   */
+
+#main_toolbar{
+	height:10px;
+	background:#000;
+	height:20px;	
+	position:relative;
+	}
+#main_toolbar span{
+	color:#fff;
+	}
+
+div.subnav_toolbar {
+	list-style: none;
+	position: absolute; /*--Important - Keeps subnav from affecting main navigation flow--*/	
+	background:white;	
+	display: none;
+	width:390px;
+	margin-left: -16px;
+	top: 28px;
+	border: 1px solid #ccc;
+	z-index: 100;
+}
+
+
+
+.top_toolbar{
+	list-style:none;
+	display:inline;
+	margin:0;
+	padding:0;	
+	}
+.top_toolbar li{
+	 display: inline-table;	 
+	 width: 100%;
+	 height:22px;
+	 padding:0px;
+	 margin:0px;
+
+	}
+.top_toolbar li:hover{
+	background:#F3F3F3;	
+	}	
+	
+.top_toolbar li a{
+	color:#000;
+	padding-left:15px;
+	}
+
+	
+
+.subnav_toolbar li:hover a{
+/*	color:#6FF;*/
+
+	}	
+	
+.subnav_toolbar li{
+	color:#000;
+	}	
+	
+	
+#dt_example li:hover a{
+	color:#000;
+	}
+#dt_example li a{
+	color:#000;
+	}	
+	
+.top_toolbar_sub{
+	list-style:circle;
+	margin:0;
+	padding:0;
+	}
